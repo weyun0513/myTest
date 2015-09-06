@@ -1,0 +1,185 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+.sidebar applet, object, iframe,
+h1, h2, h3, h4, h5, h6,, blockquote, pre,
+a,   var, u, i, center,
+dl, dt, dd, ol, ul, li, 
+menu    {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.sidebar {
+  line-height: 10px;
+  position: relative;
+  left: 0;
+  -webkit-transition:left  .3s;
+  transition: left  .3s;
+}
+
+.sidebar.open {
+    left: 300px;
+	 background:url("../images/tweed.png");
+  }
+
+.sidebar ol, ul {
+	list-style: none;
+}
+.sidebar blockquote, q {
+	quotes: none;
+}
+.sidebar blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* CSS RESET DONE */
+
+.sidebar html,body  { height: 100%; }
+.sidebar {
+  color: #fff;
+  margin: 0 auto;
+  font: 1em/1.3em Times, serif;
+  font-family: 'Montserrat', serif;
+}
+
+.sidebar.header {
+  margin-bottom: 15px;
+  position: relative;
+ z-index:10;
+}
+
+.sidebar.menucontainer {
+  position: relative;
+/*   padding: 70px 0%; */
+  text-align: center;
+  height: 100%;
+}
+
+.sidebar h1 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: bold;
+}
+.sidebar a {
+  text-decoration: none;
+  color: #fff;  
+  margin: 10px 0px;
+}
+
+.sidebar a.menu-icon {
+	  color: #00C0F2;   
+  position: absolute;
+  top:-10px;
+  left: 00px;
+  font-size: 33px;
+}
+
+.sidebar ul.side-menu {
+  position: fixed;
+  top: 0px;
+  left: -300px;
+  width: 270px;
+  height: 100%;
+  background-color:  rgba(47,79,79,.8);
+  -webkit-transition: left .1s;
+  transition: left .1s;
+}
+
+/* 藍背景底色移動 */
+  ul.side-menu.open {
+    left: -20px;
+    top: 50px;
+  }
+  
+  a.menu-icon.open {
+    left: 260px;
+    top: -100px;
+  }
+  
+
+  
+.sidebar  ul.side-menu li {
+/* 	第一欄開頭 */
+    position: absolute;
+    top: 100%;
+    padding: 50px 0px 50px 50px;
+    text-align: left;
+    height: 0px;
+    line-height: 10px;
+/*     每格底線 */
+    border-bottom: 1px solid #fff;
+    -webkit-transition: top 5ms;
+    transition: top 5ms;
+  }
+  
+.sidebar  ul.side-menu li.row {
+    border: 0;
+    position: static;
+    top: 0;
+    -webkit-transition: none;
+    transition: none;
+
+  }
+  
+ .sidebar   ul.side-menu li.metro {
+/*  改這邊條寬度 */
+      position: absolute;
+      padding: 10px 0px 20px 0px;
+      height:55px;
+      text-align: center;
+      background-color: #fff;
+        -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    }
+
+    
+  .sidebar  ul.side-menu h2.title {
+      color: white;
+      text-align: center;
+      padding:  30px 0 20px 0px;
+      margin-bottom:50px;
+      position: relative;
+      left: 0px;
+      top: 30px;
+      font-size: 33px;
+      line-height: 0px;
+      height: 10px;
+      background-color:  rgba(47,79,79,1);
+       border-bottom: 1px solid #000;
+      -webkit-transition: top .05s;
+      transition: top .05s;
+        font-family: "Helvetica Neue", Helvetica, Arial, "微軟正黑體", sans-serif;
+    }  
+  .sidebar  ul.side-menu li a {
+       display: block;
+      padding: 2px;
+    
+      height: inherit;
+      line-height: inherit;
+      font-family: "Helvetica Neue", Helvetica, Arial, "微軟正黑體", sans-serif;     
+    }
+  .sidebar    ul.side-menu li.metro a {
+/*   字體上下 */
+/*          margin: 20x; */
+        height: 60px; 
+      }
+
+    ul.side-menu li.metro.myyellow{ background-color: #F6D375; }
+    ul.side-menu li.metro.mygray{ background-color: #808080; }
+    ul.side-menu li.metro.mypink{ background-color: #db8580; }
+     ul.side-menu li.metro.mygray2{ background-color: rgba(41,131,140,1); 
+
+        }
+      ul.side-menu li.metro.half { width: 50%; font-size:20px}
+      ul.side-menu li.metro.full { width: 100%;font-size:20px }
+ 
+
+.sidebar ul.side-menu li.metro:hover {background:rgba(0,226,226,.9)}

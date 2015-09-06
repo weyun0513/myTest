@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.pilot.model.PilotVO" table="Pilot">
+		<id name="pilotID" column="pilotID" >
+		    
+		</id>
+			
+		<property name="pilotName" column="pilotName" />
+		<property name="birthday" column="birthday"  />
+		<property name="phone" column="phone"  />
+		
+		<property name="lastTrainDate" column="lastTrainDate" />
+		<property name="certificateID" column="certificateID"  />
+		<property name="prohibit" column="prohibit"  />
+		<property name="certificateExpired" column="certificateExpired" />
+		<property name="urgentContact" column="urgentContact"  />
+		<property name="urgentPhone" column="urgentPhone" />
+		<property name="lastValidDate" column="lastValidDate"  />
+		<property name="nextValidDate" column="nextValidDate" />
+		
+	<many-to-one name="aircraftVO" class="com.aircraft.model.AircraftVO"
+			cascade="persist" not-found="ignore" lazy="false">
+			<column name="craftID" />
+		</many-to-one>	 
+	
+	</class>
+</hibernate-mapping>
+

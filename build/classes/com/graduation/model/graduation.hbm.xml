@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.graduation.model.GraduationVO" table="Graduation" >
+        <composite-id>
+            <key-many-to-one name="pilotVO" class="com.pilot.model.PilotVO" lazy="false" >
+				<column name="pilotID" />
+			</key-many-to-one>
+        	<key-many-to-one name="classListVO" class="com.classlist.model.ClassListVO" lazy="false" >
+				<column name="classID" />
+				<column name="classNum" />
+			</key-many-to-one>
+        </composite-id>
+        
+        <property name="birthday" column="birthday" />
+        <property name="trainDate" column="trainDate" />
+        <property name="validDate" column="validDate" />
+        <property name="deptName" column="deptName" />
+        <property name="notes" column="notes" />
+        
+    </class>
+</hibernate-mapping>
+

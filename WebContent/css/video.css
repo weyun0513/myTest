@@ -1,0 +1,78 @@
+#video_background {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1000;
+	overflow: hidden;
+}
+#video_pattern {
+	background: url("../images/tweed.png");
+	position: fixed;
+	opacity: 0.3;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+.wordShow {
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+	bottom: 45%;
+	font-family: Georgia, "微軟正黑體";
+	font-style: italic;
+	font-size: 28px;
+	color: #FFF;
+	line-height: 1.5em;
+	text-align: center;
+	letter-spacing:1px;
+}
+.wordShow p {
+	padding: 0 30px;
+}
+.btnWrapper {
+	width: 100%;
+	height: 40px;
+	z-index: 2;
+	position: absolute;
+	bottom: 35%;
+	text-align: center;
+}
+.btnWrapper ul {
+	font-size: 0;
+}
+.btnWrapper li {
+	display: inline-block;
+	margin-right: 20px;
+}
+.btnWrapper li a {
+	width: 100px;
+	font-family: "微軟正黑體";
+	height: 16px;
+	padding: 10px 10px 14px 10px;
+	border: 2px solid #CCC;
+	border-radius: 10px;
+	text-decoration: none;
+	display: inline-block;
+	color: #CCC;
+	font-size: 20px;
+	transition:all 0.3s ease-in-out;
+}
+.btnWrapper li a:hover {
+	background-color:rgba(227, 228, 229, 0.2);
+	color: #FFF;
+	border: 2px solid #FFF;
+}
+hr {
+	z-index: -1;
+	position: absolute;
+	color: #FFF;
+	width: 98%;
+	bottom: 43%;
+	margin-left: 1%;
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.classlist.model.ClassListVO" table="ClassList" dynamic-insert="true">
+        
+        <composite-id>
+			<key-many-to-one name="classTypeVO" class="com.classtype.model.ClassTypeVO" lazy="false">
+           		<column name="classID"/>
+        	</key-many-to-one>
+			<key-property name="classNum" column="classNum" />
+		</composite-id>
+        
+        <property name="classStatus" column="classStatus" />
+        <property name="startDate" column="startDate" />
+        <property name="endDate" column="endDate" />
+        <property name="maxNum" column="maxNum" />
+        <property name="regNum" column="regNum"/>
+        <property name="createDate" column="createDate" />
+        <many-to-one name="trainDeptVO" class="com.traindept.model.TrainDeptVO" lazy="false">
+        	<column name="deptID" />
+        </many-to-one>
+        <many-to-one name="managerVO" class="com.manager.model.ManagerVO" lazy="false">
+        	<column name="managerID" />
+        </many-to-one>
+        <property name="classSchedule" column="classSchedule" /> 
+    </class>
+</hibernate-mapping>
+

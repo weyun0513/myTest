@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.modrecord.model.ModRecordVO" table="ModRecord"  dynamic-insert="true">
+		 <composite-id>
+			<key-property name="modDate" column="modDate" />
+			<key-property name="pilotID" column="pilotID" />
+		</composite-id>
+		<property name="regID" column="regID" />
+		<property name="modFunction" column="modFunction" />
+		<property name="modURL" column="modURL" />
+		<property name="modIP" column="modIP" />	
+		<many-to-one name="ManagerVO" class="com.manager.model.ManagerVO" lazy="false"  >
+			<column name="managerID" />
+		</many-to-one>
+	</class>
+</hibernate-mapping>

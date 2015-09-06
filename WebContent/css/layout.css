@@ -1,0 +1,155 @@
+body {
+	background: url("../images/tweed.png") repeat;
+}
+
+.topWrapper {
+	height: 30px;
+	background: url("../images/squared_metal.png") repeat;
+}
+
+.topBar {
+	width: 1200px;
+	margin: auto;
+	text-align: right;
+	font-size: 14px;
+	font-family: "微軟正黑體";
+	font-weight: bold;
+	color: #666;
+	line-height: 30px;
+}
+.topBar divP:before {
+	width: 14px;
+	height: 14px;
+	content: "";
+	background: url("../images/manager-26.png") no-repeat center;
+	display: inline-block;
+	margin-right: 5px;
+	top: 4px;
+}
+
+.topBar span {
+	color: #444;
+}
+
+.wrapper {
+	width: 1200px;
+	margin: auto;
+	padding: 20px;
+}
+.info {
+	font-size: 16px;
+	font-family: "微軟正黑體";
+	margin: 15px 0;
+	color: #CCC;
+	padding: 10px 100px;
+	text-align: center;
+	line-height: 18px;
+}
+.mainMenu {
+	padding-top: 5px;
+}
+.mainMenu ul {
+	font-size: 0;
+	text-align: center;
+}
+.mainMenu li {
+	font-family: "微軟正黑體";
+	font-size: 16px;
+	display: inline-block;
+	padding: 20px 40px 0 40px;
+	color: #CCC;
+	text-decoration: none;
+}
+.mainMenu li p {
+	padding-top: 30px;
+}
+.mainMenu li a {
+	color: #CCC;
+	text-decoration: none;
+}
+.link1 a:before {
+	content: "";
+	width: 64px;
+	height: 64px;
+	background: url("../images/touchscreen_smartphone-64.png") no-repeat;
+	display: block;
+}
+.link1 a:hover{
+	background: url("../images/touchscreen_smartphone-64_hover.png") no-repeat;
+	display: block;
+	color: #FFF799;
+}
+.link2 a:before {
+	content: "";
+	width: 64px;
+	height: 64px;
+	background: url("../images/overtime-64.png") no-repeat;
+	display: block;
+}
+.link2 a:hover{
+	background: url("../images/overtime-64_hover.png") no-repeat;
+	display: block;
+	color: #FFF799;
+}
+.link3 a:before {
+	content: "";
+	width: 64px;
+	height: 64px;
+	background: url("../images/airport-64.png") no-repeat;
+	display: block;
+}
+.link3 a:hover{
+	background: url("../images/airport-64_hover.png") no-repeat;
+	display: block;
+	color: #FFF799;
+}
+.link4 a:before {
+	content: "";
+	width: 128px;
+	height: 64px;
+	background: url("../images/checklist-64.png") no-repeat center;
+	display: block;
+}
+.link4 a:hover{
+	background: url("../images/checklist-64_hover.png") no-repeat top;
+	display: block;
+	color: #FFF799;
+}
+.link5 a:before {
+	content: "";
+	width: 64px;
+	height: 64px;
+	background: url("../images/assistant-64.png") no-repeat;
+	display: block;
+}
+.link5 a:hover{
+	background: url("../images/assistant-64_hover.png") no-repeat;
+	display: block;
+	color: #FFF799;
+}
+.link6 a:before {
+	content: "";
+	width: 128px;
+	height: 64px;
+	background: url("../images/check_book-64.png") no-repeat center;
+	display: block;
+}
+.link6 a:hover{
+	background: url("../images/check_book-64_hover.png") no-repeat top;
+	display: block;
+	color: #FFF799;
+}
+.link7 a:before {
+	content: "";
+	width: 128px;
+	height: 64px;
+	background: url("../images/cash_receiving-64.png") no-repeat center;
+	display: block;
+	transition:all 0.3s ease-in-out;
+}
+.link7 a:hover{
+	background: url("../images/cash_receiving-64_hover.png") no-repeat top;
+	display: block;
+	color: #FFF799;
+ 	
+}

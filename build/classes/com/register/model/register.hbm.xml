@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.register.model.RegisterVO" table="Register" dynamic-insert="true">
+		<id name="regID" column="regID">
+		 <generator  class="identity"></generator>   
+		</id>
+			
+		<property name="regDate" column="regDate" />
+		<property name="payStatus" column="payStatus"  />
+		<property name="regIP" column="regIP" />
+		<property name="regStatus" column="regStatus"  />
+		<property name="checkPayDate" column="checkPayDate"  />
+		<property name="notes" column="notes"  />
+		<many-to-one name="pilotVO" class="com.pilot.model.PilotVO" cascade="persist" not-found="ignore" >
+			<column name="pilotID" />
+		</many-to-one>
+		<many-to-one name="managerVO" class="com.manager.model.ManagerVO" cascade="persist" not-found="ignore" >
+			<column name="managerID" />
+				</many-to-one>
+				<many-to-one name="managerVO2" class="com.manager.model.ManagerVO" cascade="persist" not-found="ignore" >
+			<column name="checkManagerID" />
+		</many-to-one>
+				
+    <many-to-one name="classListVO" class="com.classlist.model.ClassListVO" cascade="persist" not-found="ignore" fetch="select">
+			<column name="classID" />
+			<column name="classNum" />
+		</many-to-one>
+		
+	</class>
+</hibernate-mapping>
+

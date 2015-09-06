@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.manager.model.ManagerVO" table="Manager" dynamic-insert="true">
+		<id name="managerID" column="managerID">
+		  	<generator class="identity"/>
+		</id>		
+		<property name="managerAccnt" column="managerAccnt" />	
+		<property name="managerPWD" column="managerPWD" type="binary"/>
+		
+		<many-to-one name="TrainDeptVO" class="com.traindept.model.TrainDeptVO" lazy="false"  outer-join="true">
+			<column name="deptID" />
+		</many-to-one>	
+	</class>
+</hibernate-mapping>
