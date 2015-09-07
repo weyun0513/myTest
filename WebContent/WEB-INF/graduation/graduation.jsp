@@ -3,6 +3,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ page import="java.util.*"%>
+<%@ page import="javax.servlet.*"%>
+<%@ page import="javax.servlet.jsp.*"%>
 <%@ page import="com.graduation.model.*"%>
 <%@ page import="com.register.model.*"%>
 
